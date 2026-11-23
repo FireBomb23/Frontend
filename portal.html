@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171A3A">
+  <title>LAB Catarina Domingos · Portal</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 132'%3E%3Crect width='160' height='132' rx='24' fill='%2321244A'/%3E%3Cg transform='translate(10 10)'%3E%3Cpath fill='%23e4c524' fill-rule='evenodd' d='M104.48 2.273 C117.226 -0.223 129.846 5.194 136.042 16.42 C140.937 25.289 141.382 35.44 139.006 45.401 C135.194 61.377 129.707 76.585 122.331 91.273 C118.8 98.305 112.314 109.533 106.425 108.592 C105.127 108.385 102.721 106.636 102.357 105.327 L99.792 96.088 C98.871 97.243 97.868 98.348 96.781 99.403 C89.688 106.281 80.44 109.72 69.035 109.72 L32.79 109.72 L32.896 108.651 L34.18 108.651 C35.961 108.651 37.494 108.063 38.777 106.887 C40.06 105.711 40.808 104.267 41.022 102.557 L41.022 85.413 C33.703 85.15 27.056 83.451 21.082 80.318 C14.56 76.896 9.499 72.227 5.899 66.311 C2.3 60.395 0.5 53.784 0.5 46.478 C0.5 39.172 2.282 32.56 5.846 26.644 C9.41 20.728 14.328 16.077 20.601 12.691 C26.873 9.305 33.859 7.613 41.557 7.613 C46.404 7.613 51.34 8.272 56.365 9.591 C61.39 10.909 65.578 12.673 68.928 14.883 L71.067 29.959 L70.104 29.959 C68.607 23.971 65.15 19.285 59.733 15.899 C54.316 12.513 48.293 10.82 41.664 10.82 C32.184 10.82 24.289 14.188 17.981 20.924 C11.673 27.66 8.519 36.124 8.519 46.317 C8.519 56.51 11.78 65.046 18.302 71.924 C24.218 78.164 31.792 81.574 41.022 82.153 L41.022 38.085 C32.112 38.298 25.804 39.688 22.098 42.254 C20.173 43.609 18.712 44.91 17.714 46.157 C16.716 47.404 15.683 48.99 14.613 50.915 L13.437 50.487 C15.504 44.428 18.961 40.259 23.808 37.978 C28.655 35.697 37.245 34.556 49.576 34.556 C52.142 34.556 58.628 34.663 69.035 34.877 C76.591 35.091 83.255 36.73 89.029 39.795 C94.803 42.86 99.311 47.19 102.554 52.786 C105.797 58.381 107.419 64.886 107.419 72.299 C107.419 77.998 106.499 83.137 104.66 87.718 C106.626 95.58 106.926 101.866 108.2 101.198 C114.802 97.737 124.968 62.355 127.696 50.144 C131.141 34.725 130.647 16.784 115.041 10.825 C98.334 4.447 84.54 24.423 69.73 14.478 C76.149 13.988 81.402 12.563 86.578 9.424 C92.13 6.058 98.013 3.54 104.48 2.273 Z M47.972 38.085 L47.972 82.064 L47.972 82.064 C56.69 81.283 63.942 77.92 69.73 71.978 C76.395 65.135 79.727 55.762 79.727 43.858 L80.796 43.858 C80.867 44.714 80.903 45.569 80.903 46.424 C80.903 58.684 77.606 68.254 71.013 75.132 C65.347 81.044 57.666 84.415 47.972 85.246 L47.972 106.513 L69.035 106.513 C78.088 106.513 85.412 103.376 91.007 97.104 C96.602 90.831 99.4 82.563 99.4 72.299 C99.4 65.527 98.135 59.557 95.604 54.39 C93.074 49.222 89.51 45.212 84.913 42.361 C80.315 39.51 75.023 38.085 69.035 38.085 Z'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+  <div class="portal-backdrop" id="sidebar-backdrop" hidden></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Navegação do portal">
+    <a class="sidebar__brand" href="index.html" aria-label="Voltar ao website público">
+      <svg class="brand__mark" viewBox="0 0 140.903 111.785" aria-hidden="true">
+        <path fill="#e4c524" fill-rule="evenodd" d="M104.48 2.273 C117.226 -0.223 129.846 5.194 136.042 16.42 C140.937 25.289 141.382 35.44 139.006 45.401 C135.194 61.377 129.707 76.585 122.331 91.273 C118.8 98.305 112.314 109.533 106.425 108.592 C105.127 108.385 102.721 106.636 102.357 105.327 L99.792 96.088 C98.871 97.243 97.868 98.348 96.781 99.403 C89.688 106.281 80.44 109.72 69.035 109.72 L32.79 109.72 L32.896 108.651 L34.18 108.651 C35.961 108.651 37.494 108.063 38.777 106.887 C40.06 105.711 40.808 104.267 41.022 102.557 L41.022 85.413 C33.703 85.15 27.056 83.451 21.082 80.318 C14.56 76.896 9.499 72.227 5.899 66.311 C2.3 60.395 0.5 53.784 0.5 46.478 C0.5 39.172 2.282 32.56 5.846 26.644 C9.41 20.728 14.328 16.077 20.601 12.691 C26.873 9.305 33.859 7.613 41.557 7.613 C46.404 7.613 51.34 8.272 56.365 9.591 C61.39 10.909 65.578 12.673 68.928 14.883 L71.067 29.959 L70.104 29.959 C68.607 23.971 65.15 19.285 59.733 15.899 C54.316 12.513 48.293 10.82 41.664 10.82 C32.184 10.82 24.289 14.188 17.981 20.924 C11.673 27.66 8.519 36.124 8.519 46.317 C8.519 56.51 11.78 65.046 18.302 71.924 C24.218 78.164 31.792 81.574 41.022 82.153 L41.022 38.085 C32.112 38.298 25.804 39.688 22.098 42.254 C20.173 43.609 18.712 44.91 17.714 46.157 C16.716 47.404 15.683 48.99 14.613 50.915 L13.437 50.487 C15.504 44.428 18.961 40.259 23.808 37.978 C28.655 35.697 37.245 34.556 49.576 34.556 C52.142 34.556 58.628 34.663 69.035 34.877 C76.591 35.091 83.255 36.73 89.029 39.795 C94.803 42.86 99.311 47.19 102.554 52.786 C105.797 58.381 107.419 64.886 107.419 72.299 C107.419 77.998 106.499 83.137 104.66 87.718 C106.626 95.58 106.926 101.866 108.2 101.198 C114.802 97.737 124.968 62.355 127.696 50.144 C131.141 34.725 130.647 16.784 115.041 10.825 C98.334 4.447 84.54 24.423 69.73 14.478 C76.149 13.988 81.402 12.563 86.578 9.424 C92.13 6.058 98.013 3.54 104.48 2.273 Z M47.972 38.085 L47.972 82.064 L47.972 82.064 C56.69 81.283 63.942 77.92 69.73 71.978 C76.395 65.135 79.727 55.762 79.727 43.858 L80.796 43.858 C80.867 44.714 80.903 45.569 80.903 46.424 C80.903 58.684 77.606 68.254 71.013 75.132 C65.347 81.044 57.666 84.415 47.972 85.246 L47.972 106.513 L69.035 106.513 C78.088 106.513 85.412 103.376 91.007 97.104 C96.602 90.831 99.4 82.563 99.4 72.299 C99.4 65.527 98.135 59.557 95.604 54.39 C93.074 49.222 89.51 45.212 84.913 42.361 C80.315 39.51 75.023 38.085 69.035 38.085 Z"/>
+      </svg>
+      <span>
+        <strong>LAB Catarina Domingos</strong>
+        <small id="portal-scope">Portal clínico</small>
+      </span>
+    </a>
+
+    <div class="user-card">
+      <div class="user-card__avatar" id="user-initials">CD</div>
+      <div class="user-card__meta">
+        <strong id="user-name">A carregar...</strong>
+        <span id="user-role"></span>
+      </div>
+    </div>
+
+    <div class="local-banner" id="local-mode-banner" hidden>
+      <span>Modo local de avaliação</span>
+      <select id="local-role-switch" aria-label="Alternar perfil de avaliação">
+        <option value="clinica">Perfil Clínica</option>
+        <option value="admin">Perfil Direção</option>
+        <option value="tecnico">Perfil Técnico</option>
+      </select>
+    </div>
+
+    <nav class="sidebar__nav" id="nav"></nav>
+
+    <div class="sidebar__foot">
+      <a class="sidebar__action" href="index.html">Website público</a>
+      <button class="sidebar__action sidebar__action--danger" id="logout" type="button">Terminar sessão</button>
+    </div>
+  </aside>
+
+  <main class="workspace">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="icon-btn topbar__menu" id="menu" type="button" aria-label="Abrir navegação">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div>
+          <h1 id="title">Resumo</h1>
+          <p class="topbar__subtitle" id="subtitle">Visão geral dos casos e prazos clínicos.</p>
+        </div>
+      </div>
+
+      <div class="topbar__actions">
+        <button class="btn btn--primary" id="new-order-btn" type="button">Novo pedido</button>
+        <button class="btn btn--ghost" id="refresh" type="button">Atualizar</button>
+      </div>
+    </header>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <section class="content" id="content"></section>
+  </main>
+
+  <aside class="drawer-layer" id="detail-drawer" hidden>
+    <div class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <div class="drawer__head">
+        <div>
+          <h2 id="drawer-title">Detalhe do trabalho</h2>
+          <p id="drawer-sub"></p>
+        </div>
+        <button class="icon-btn" type="button" id="drawer-close" aria-label="Fechar detalhe">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="drawer__body" id="drawer-body"></div>
+    </div>
+  </aside>
+
+  <div class="modal-layer" id="order-modal" hidden>
+    <section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+      <div class="modal-dialog__head">
+        <div>
+          <h2 id="order-modal-title">Novo pedido</h2>
+          <p>Registe a prescrição, a data da próxima consulta e os dentes no odontograma.</p>
+        </div>
+        <button class="icon-btn" type="button" data-close-dialog aria-label="Fechar janela">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <form id="order-form" class="dialog-form" novalidate>
+        <div class="form-grid">
+          <div class="field-group" id="order-clinic-wrap">
+            <label for="order-clinic">Clínica *</label>
+            <select id="order-clinic"></select>
+          </div>
+          <div class="field-group">
+            <label for="order-doctor">Médico prescritor *</label>
+            <select id="order-doctor" required></select>
+          </div>
+          <div class="field-group">
+            <label for="order-patient">Paciente (iniciais ou código) *</label>
+            <input id="order-patient" type="text" placeholder="Ex.: M. S. ou PAC-104" required>
+          </div>
+          <div class="field-group">
+            <label for="order-type">Tipo de trabalho *</label>
+            <select id="order-type" required></select>
+          </div>
+          <div class="field-group">
+            <label for="order-material">Material pretendido</label>
+            <input id="order-material" type="text" placeholder="Ex.: Zircónia translúcida, Dissilicato">
+          </div>
+          <div class="field-group">
+            <label for="order-date">Data da próxima consulta *</label>
+            <input id="order-date" type="date" required>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="odon-head">
+            <label>Odontograma FDI (dentes selecionados)</label>
+            <button class="link-btn" type="button" id="order-clear-teeth">Limpar seleção</button>
+          </div>
+          <div id="order-odontogram"></div>
+        </div>
+
+        <div class="field-group">
+          <label for="order-notes">Notas clínicas</label>
+          <textarea id="order-notes" rows="3" placeholder="Cor, registo oclusal ou instruções para a bancada."></textarea>
+        </div>
+
+        <p class="form-error" id="order-error" role="alert"></p>
+
+        <div class="dialog-actions">
+          <button class="btn btn--ghost" type="button" data-close-dialog>Cancelar</button>
+          <button class="btn btn--primary" type="submit">Submeter pedido</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <div class="modal-layer" id="stl-modal" hidden>
+    <section class="modal-dialog modal-dialog--sm" role="dialog" aria-modal="true" aria-labelledby="stl-modal-title">
+      <div class="modal-dialog__head">
+        <div>
+          <h2 id="stl-modal-title">Carregar ficheiro STL</h2>
+          <p>Associe o modelo digital (.stl até 100 MB) ao trabalho correspondente.</p>
+        </div>
+        <button class="icon-btn" type="button" data-close-dialog aria-label="Fechar janela">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <form id="stl-form" class="dialog-form" novalidate>
+        <div class="field-group">
+          <label for="stl-work">Trabalho associado *</label>
+          <select id="stl-work" required></select>
+        </div>
+        <div class="field-group">
+          <label for="stl-file">Ficheiro STL *</label>
+          <input id="stl-file" type="file" accept=".stl" required>
+        </div>
+        <p class="form-error" id="stl-error" role="alert"></p>
+        <div class="dialog-actions">
+          <button class="btn btn--ghost" type="button" data-close-dialog>Cancelar</button>
+          <button class="btn btn--primary" type="submit">Carregar ficheiro</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script src="portal.js"></script>
+</body>
+</html>
